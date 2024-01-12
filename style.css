@@ -2,6 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&family=Work+Sans:wght@200;300;400&display=swap');
 
 
+@keyframes slideDown {
+    from {
+        top: -600px;
+        opacity: 0;
+    }
+   
+   
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        left: -600px;
+        opacity: 0;
+    }
+
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
 
@@ -34,6 +60,7 @@ header {
     padding: 0.6rem 0;
     position: fixed;
     z-index: 1;
+    
 
 }
 
@@ -91,6 +118,7 @@ header {
     transition: 0.3s;
     z-index: 9999;
     /* padding-right: 1rem; */
+   
 }
 .callWindow *{
     padding: 0;
@@ -174,6 +202,9 @@ header {
     text-align: center;
     color: white;
     transition: 0.4s;
+    animation: slideLeft 1.4s ease-out;
+    position: relative;
+   
 }
 
 
@@ -192,6 +223,8 @@ header {
 .section1-form {
     background-color: #fff;
     padding: 2rem;
+    animation: slideDown 1.4s ease-out;
+    position: relative;
 }
 
 .section1-form p {
@@ -413,9 +446,7 @@ header {
     transition: 0.4s;
 }
 
-.section-5 .individual-card:last-child {
-    margin-bottom: 4rem;
-}
+
 
 .section-5 .individual-card:hover {
     box-shadow: 1px 1px 14px 8px #ff4aae;
