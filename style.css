@@ -2,31 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&family=Work+Sans:wght@200;300;400&display=swap');
 
 
-@keyframes slideDown {
-    from {
-        top: -600px;
-        opacity: 0;
-    }
-   
-   
-    to {
-        top: 0;
-        opacity: 1;
-    }
-}
+
 
 @keyframes slideLeft {
     from {
-        left: -600px;
+        right: -600px;
         opacity: 0;
     }
 
 
     to {
-        left: 0;
+        right: 0;
         opacity: 1;
     }
 }
+
 
 * {
     margin: 0;
@@ -108,7 +98,7 @@ header {
 .callWindow{
     background-color: rgba(22, 22, 22,0.9);
     position: absolute;
-    height: 70%;
+    height: 100%;
     width: 55%;
     
     top: 80px;
@@ -132,6 +122,8 @@ header {
     padding: 1rem 0;
     border-bottom: 1px solid grey;
     transition: 0.4s;
+    text-align: center;
+    padding: 2rem 0;
   
 }
 .callWindow-content li:hover{
@@ -202,8 +194,7 @@ header {
     text-align: center;
     color: white;
     transition: 0.4s;
-    animation: slideLeft 1.4s ease-out;
-    position: relative;
+    
    
 }
 
@@ -223,7 +214,7 @@ header {
 .section1-form {
     background-color: #fff;
     padding: 2rem;
-    animation: slideDown 1.4s ease-out;
+    animation: slideLeft 1s ease-out;
     position: relative;
 }
 
@@ -604,7 +595,7 @@ header {
 
 @media only screen and (min-width:500px) {
     .callWindow{
-        width: 40%;
+        width: 30%;
         height: 100%;
     }
     
