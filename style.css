@@ -82,12 +82,12 @@ header {
     background-color: rgba(22, 22, 22,0.9);
     position: absolute;
     height: 100%;
-    width: 40%;
+    width: 55%;
     
     top: 80px;
     margin: auto;
     display: block;
-    left: -40%;
+    left: -60%;
     transition: 0.3s;
     z-index: 9999;
 }
@@ -555,6 +555,10 @@ header {
 }
 
 @media only screen and (min-width:500px) {
+    .callWindow{
+        width: 40%;
+    }
+    
     .section4-images {
         display: grid;
         grid-template-columns: 1fr 1fr;
