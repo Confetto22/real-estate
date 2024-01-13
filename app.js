@@ -4,7 +4,9 @@ const callWindowEl = document.querySelector(".callWindow")
 const closeButtonEl = document.querySelector(".close")
 const overlaysEl = document.querySelector(".overlay")
 const sectionOneEl = document.querySelector("section-1");
+const changeImageEl = document.getElementsByClassName("home-img")
 
+console.log(changeImageEl);
 
 
 
@@ -19,32 +21,29 @@ function callAnimation() {
         firstSectoinEl.classList.remove("shift")
     })
 
-    closeOutside();
+   
 
-    // document.addEventListener("click", function (event) {
-    //     if (!firstSectoinEl.contains(event.target) && !sectionOneEl.contains(event.target)) {
-    //         console.log("yes")
-    //         console.log(event.target);
-    //          callWindowEl.classList.remove("slide")
-    //         firstSectoinEl.classList.remove("shift")
-    //     } else {
-    //         console.log("no");
-    //          console.log(event.target);
-    //     }
-    //   })
+    
 }
 
-// function closeOutside() {
-//        window.addEventListener("click", function (event) {
-//         if (event.target === sectionOneEl) {
-//             console.log("hello");
-//             callWindowEl.classList.remove("slide");
-//             firstSectoinEl.classList.remove("shift")
-//         }
-//     })
-// }
+
 
 callAnimation();
 
-// closeOutside();
+
+function imageSize() {
+    for ( let image of changeImageEl) {
+        image.addEventListener("mouseover", function(){
+            image.style.scale = "1.1";
+            image.style.transition = "0.4s";
+
+            image.addEventListener("mouseout", function () {
+                image.style.scale = "1";
+            })
+        })
+    }
+}
+console.log(imageSize());
+
+
 
