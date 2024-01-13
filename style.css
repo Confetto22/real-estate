@@ -16,6 +16,18 @@
         opacity: 1;
     }
 }
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
 
 
 * {
@@ -50,6 +62,7 @@ header {
     padding: 0.6rem 0;
     position: fixed;
     z-index: 1;
+    animation: slideDown 1s ease-out;
     
 
 }
@@ -124,11 +137,20 @@ header {
     transition: 0.4s;
     text-align: center;
     padding: 2rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: large;
+    transition: 0.2s;
   
 }
 .callWindow-content li:hover{
     background-color: #111;
     cursor: pointer;
+
+}
+.callWindow-content li:active{
+    opacity: 0.2;
 }
 .callWindow-content li a{
     text-decoration: none;
