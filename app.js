@@ -4,7 +4,7 @@ const callWindowEl = document.querySelector(".callWindow")
 const closeButtonEl = document.querySelector(".close")
 const overlaysEl = document.querySelector(".overlay")
 const sectionOneEl = document.querySelector("section-1");
-const allPartsEl = document.querySelector(".cover");
+
 
 
 
@@ -34,15 +34,15 @@ function callAnimation() {
     //   })
 }
 
-function closeOutside() {
-       window.addEventListener("click", function (event) {
-        if (event.target === allPartsEl) {
-            console.log("hello");
-            callWindowEl.classList.remove("slide");
-            firstSectoinEl.classList.remove("shift")
-        }
-    })
-}
+// function closeOutside() {
+//        window.addEventListener("click", function (event) {
+//         if (event.target === sectionOneEl) {
+//             console.log("hello");
+//             callWindowEl.classList.remove("slide");
+//             firstSectoinEl.classList.remove("shift")
+//         }
+//     })
+// }
 
 callAnimation();
 
