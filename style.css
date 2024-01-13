@@ -222,17 +222,7 @@ header {
 }
 
 
-.section-1 button:nth-of-type(2) {
-    width: 30%;
-    background-color: #fff;
-    transition: 0.3s;
-}
 
-.section-1 button:nth-of-type(2):hover {
-    background-color: transparent;
-    border: 1px solid white;
-    color: #fff;
-}
 
 .section1-form {
     background-color: #fff;
@@ -269,9 +259,17 @@ header {
 
 .section1-form button {
     background-color: rgb(87, 56, 133);
-    color: #fff;
+    
     width: 50%;
 }
+.section1-form button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* .section1-form button:active{
+    opacity: 0.4;
+} */
 
 .section-2 {
     background-color: #fff;
